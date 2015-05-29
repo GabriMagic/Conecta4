@@ -2,7 +2,6 @@ package conecta4;
 
 public class partida implements partidaEmpezada, partidaTerminada{
 	
-	
 	private static int cont=0;
 	static tablero mesa;
 	public static ficha blanco;
@@ -31,15 +30,12 @@ public class partida implements partidaEmpezada, partidaTerminada{
 		
 		System.out.println("Turno del jugador "+turno+": ");
 		cont++;
-		
 		return turno;
 	}
 	
 /////// PONFICHA() ////////////////////////////////////////////////////////////////////////////////////////////////
 	public static boolean ponFicha(int col){
-		
-		
-		
+		/*IMPLEMENTAR*/
 		return true;
 	}
 	
@@ -58,7 +54,6 @@ public class partida implements partidaEmpezada, partidaTerminada{
 
 ///////// GANADOR() ////////////////////////////////////////////////////////////////////////////////////////////////
 	public boolean ganador(){
-		
 		if(terminado()){
 			if(partida.mesa.cuatroEnRaya(blanco)){
 				System.out.println("Ha ganado el Jugador Blanco");
@@ -70,8 +65,6 @@ public class partida implements partidaEmpezada, partidaTerminada{
 				System.out.println("Ha ocurrido un empate");
 			}
 		}
-		
-		
 		return true;
 	}
 
@@ -84,7 +77,6 @@ public class partida implements partidaEmpezada, partidaTerminada{
 		}
 		System.out.println();
 	}
-	
 	System.out.println();
 	System.out.println();
 }
@@ -93,5 +85,4 @@ public class partida implements partidaEmpezada, partidaTerminada{
 	public static void cambiarTurno() {
 		cont++;
 	}
-	
 }
